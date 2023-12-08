@@ -146,6 +146,8 @@ Terceira tela: Carrinho de compras: um local onde o cliente pode revisar os iten
 
 IMAGEM 4 – CARRINHO DE COMPRAS 
 
+![..](site4.jpg)
+
 Interface gráfica do usuário
 
 Descrição gerada automaticamente 
@@ -162,92 +164,8 @@ O custo real do produto manteve-se em conformidade com o planejamento inicial, e
 
 TABELA 2 – VALORES FINAIS PARA O DESENVOLVIMENTO DO PRODUTO 
 
-NOME DO RECURSO 
-
-DESCRITIVO 
-
-QUANTIDADE 
-
-VALOR 
-
-VALOR TOTAL 
-
+![..](tabela1.jpg)
  
-
- 
-
-COMPUTADOR 
-
-Core i5-1135G7, 8g, 256GB SSD, Iris Xe, 15.6”FHD, W11 Cinza 
-
- 
-
- 
-
- 
-
-1 
-
- 
-
- 
-
-R$ 2500,00 
-
- 
-
- 
-
-R$ 2500,00 
-
-COMPILADOR DE TEXTO 
-
-VSCode: Para a compilação da linguagem. 
-
- 
-
- 
-
-1 
-
- 
-
-R$ 0,00 
-
- 
-
-R$ 0,00 
-
-MÃO DE OBRA 
-
-Quanto custa por hora. 
-
- 
-
-7 Dias 
-
-R$ 150,00 por hora. 
-
-R$ 1050,00 
-
- 
-
-VALOR FINAL 
-
-Custo real para o desenvolvimento do produto. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-R$ 3550,00 
-
 FONTE: Autoria própria. 
 
  
@@ -280,6 +198,16 @@ sites de referencia:
 
 ##
 ## Trabalho feito por:
-Gustavo.
+Ana Clara Nogueira de Souza 
 
-ana clara 
+Ana Cristina Gonçalves Siqueira 
+
+Diana da Silva Alves 
+
+Gustavo Freire Cadamuro 
+
+Kévin Thiago dos Santos 
+
+Rayane De Oliveira Gonçalves 
+
+Sabrina Waldez de Souza Oliveira 
