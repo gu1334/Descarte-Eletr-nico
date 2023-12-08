@@ -1,0 +1,409 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
+header {
+  background-color: #001B79;
+  padding: 1em 2em; /* Ajuste para dar mais espaço horizontal */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alterado para space-between para distribuir os elementos uniformemente */
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #FFFFDD;
+  
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-grow: 1; /* Permite que o título cresça e use o espaço disponível */
+  text-align: center; /* Centraliza o texto do título */
+  transition: 0.3s;
+}
+
+header h1::before {
+  content: url('caminho_para_seu_ícone.png');
+  margin-right: 10px;
+  vertical-align: middle;
+  
+}
+
+header h1:hover {
+  transition: 0.3s;
+  color: #A2C579;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  flex-basis: 30%; /* Define um tamanho base para o container de pesquisa */
+  margin-right: 100px;
+}
+
+.search-container input[type="search"] {
+  width: 100%; /* Faz o input usar todo o espaço disponível */
+  padding: 0.5em 1em;
+  border: 1px solid #abd1c6; /* Adiciona uma borda sutil */
+  border-radius: 20px;
+  margin-right: 1em;
+}
+
+.search-container button {
+  position: absolute; /* Posiciona o botão sobre o input */
+  left: 80%; /* Posiciona à direita do container */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste fino da posição vertical */
+  background-color: #A2C579;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.search-container button:hover {
+  background-color: #D2DE32;
+  color: white;
+}
+
+button {
+  background-color: #A2C579;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #D2DE32;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 2em 10%; /* Aumenta o padding horizontal para 10% de cada lado */
+    max-width: 1200px; /* Define uma largura máxima para a grade */
+    margin: auto; /* Centraliza a grade na página */
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Você pode também definir 'align-self: start' para alinhar os itens ao topo */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#cart-button {
+  background-color: #e16162; /* Cor de destaque para o botão do carrinho */
+  color: #fffffe; /* Cor branca para o texto */
+  padding: 10px 15px; /* Ajuste o preenchimento para um visual mais proporcional */
+  font-size: 1em; /* Tamanho de fonte adequado */
+  font-weight: 600; /* Peso da fonte para se destacar */
+  border: none; /* Sem borda */
+  border-radius: 30px; /* Bordas arredondadas para um visual suave */
+  cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+  transition: all 0.3s ease; /* Transição suave para o hover em todas as propriedades */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+  position: relative; /* Para posicionamento preciso */
+  overflow: hidden; /* Esconde qualquer coisa que sobreponha o raio da borda */
+}
+
+#cart-button:hover {
+  background-color: #c13536; /* Cor mais escura quando o mouse passa sobre o botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais proeminente no hover */
+}
+
+#cart-button::before {
+  content: ''; /* Ícone de carrinho, se desejar usar um pseudo-elemento */
+  position: absolute;
+  left: 10px; /* Posicionamento à esquerda dentro do botão */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  /* Aqui você pode adicionar um ícone como background-image se desejar */
+}
+
+
+#shopping-cart {
+  display: none; /* Vai mudar para block quando active */
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  max-height: 50%;
+  border-radius: 8px; /* Cantos arredondados para o carrinho */
+  opacity: 0; /* Inicia invisível */
+  pointer-events: none; /* O usuário não pode interagir até que se torne ativo */
+  transition: opacity 0.3s ease, bottom 0.3s ease; /* Transição suave para aparecer */
+}
+
+#shopping-cart.active {
+  display: block; /* Fica visível */
+  opacity: 1; /* Torna-se opaco */
+  pointer-events: all; /* Permite interação */
+  bottom: 20px; /* Ajusta a posição para aparecer */
+}
+
+/* ...estilos para #cart-items e #cart-items button... */
+
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+#cart-items button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  transition: background-color 0.2s ease; /* Transição suave para o hover */
+}
+
+#cart-items button:hover {
+  background-color: #bd2130; /* Um tom mais escuro no hover */
+}
+
+/* Para estilizar o total do carrinho */
+#cart-total {
+  font-weight: bold;
+  display: block; /* Mostra em uma nova linha */
+  text-align: right;
+  margin-top: 1em;
+}
+
+/* Estilo para o botão de finalizar compra no carrinho */
+#checkout-button {
+  background-color: #28a745; /* Cor verde para ação de finalizar a compra */
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  width: 100%; /* Faz o botão se estender por toda a largura do carrinho */
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Transição suave para o hover */
+}
+
+#checkout-button:hover {
+  background-color: #218838; /* Um tom mais escuro no hover */
+}
+
+
+#cart-items button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #001B79;
+    color: #fff;
+    text-align: center;
+    padding: 0.30em 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para manter o conteúdo principal acima do rodapé fixo */
+main {
+    padding-bottom: 60px; /* Altura do rodapé */
+}
+/* Adicione isto ao seu styles.css existente... */
+  #payment-options {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1002;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #payment-options h2 {
+    color: #0056b3;
+    margin-bottom: 1em;
+  }
+  
+  .payment-options button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .payment-options button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Adicionando uma animação simples ao mostrar as opções de pagamento */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) translateY(0);
+    }
+  }
+  
+  #payment-options.show {
+    display: flex;
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  /* Estilos gerais, cabeçalho, rodapé e produtos */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+#overlay.active {
+  display: block; /* Mostra o overlay */
+  opacity: 1; /* Torna o overlay opaco */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 11;
+}
+/* ...restante do seu CSS... */
+
+.cancel-button {
+  background-color: #dc3545; /* Cor vermelha para ação de cancelar */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  width: 80%; /* ou o tamanho que desejar */
+  text-align: center;
+}
+
+/* Para evitar que o botão "CANCELAR" seja afetado pelo hover de .payment-options button */
+.payment-options button.cancel-button:hover {
+  background-color: #dc3545; /* Mantém a cor de fundo vermelha no hover */
+}
+
+/* Outros estilos necessários para a página */
+
+
+
+
+/*botão fixo de descart*/
+
+
+.btn-localizador {
+  width: 156px;
+  background: #91bf1f;
+  position: fixed;
+  left: 95%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 9px;
+  border: 3px solid #729617;
+  animation-delay: -2s;
+  top: 40%;
+  z-index: 999999;
+  height: 110px;
+  display: none;
+  text-align: center;
+}
+
+.btn-localizador img{
+  width: 150px;
+}
+.btn-localizador p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 0;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+
+@keyframes slide {
+  from {
+    transform:
+     translateX(0px);
+  }
+  to {
+    transform:
+     translateX(-30px);
+  }
+}
+
+.btn-localizador :hover {
+  display: flex;
+  animation: slide 0.3s ease-out forwards ;
+}

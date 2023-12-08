@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Consumption - Uma loja online para todas as suas necessidades">
+  <meta name="keywords" content="Compras, Loja Online, Smart Consumption">
+  <title>Smart Consumption</title>
+  <link rel="icon" href="imag/_7100546f-bfb8-440f-8dea-bf57f0b29092.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Cabeçalho do site com título, pesquisa e botão do carrinho -->
+<header>
+  <h1>Smart Consumption</h1>
+  <div class="search-container">
+    <input type="search" id="site-search" aria-label="Pesquisar no site" placeholder="Pesquisar..." oninput="searchProducts(this.value)">
+    <button onclick="searchProducts(document.getElementById('site-search').value)">Pesquisar</button>
+  </div>
+  <div id="cart-button" onclick="toggleCart()">Carrinho (0)</div>
+</header>
+
+<main>
+  <!-- Você preencherá seus produtos aqui -->
+  <section class="products">
+    <!-- Produto 1 -->
+    <article class="product-item" data-title="Celular Modelo A">
+      <img src="imag/DALL·E 2023-11-07 12.55.55 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, lying on a plain surface with a slight.png" alt="Celular Modelo A">
+      <h2>Celular Modelo A</h2>
+      <p>Descrição breve do Celular Modelo A.</p>
+      <span>R$ 1000,00</span>
+      <button onclick="addToCart('Celular Modelo A', 1000)">Comprar</button>
+    </article>
+    <!-- Produto 2 -->
+    <article class="product-item" data-title="Celular Modelo B">
+      <img src="imag/DALL·E 2023-11-07 12.55.58 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, different angle from the first one, ly.png" alt="Celular Modelo B">
+      <h2>Celular Modelo B</h2>
+      <p>Descrição breve do Celular Modelo B.</p>
+      <span>R$ 1200,00</span>
+      <button onclick="addToCart('Celular Modelo B', 1200)">Comprar</button>
+    </article>
+    <!-- Produto 3 -->
+    <article class="product-item" data-title="Celular Modelo C">
+      <img src="imag/DALL·E 2023-11-07 12.55.59 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, different angle from the first one, ly.png" alt="Celular Modelo C">
+      <h2>Celular Modelo C</h2>
+      <p>Descrição breve do Celular Modelo C.</p>
+      <span>R$ 1500,00</span>
+      <button onclick="addToCart('Celular Modelo C', 1500)">Comprar</button>
+    </article>
+    <!-- Produto 4 -->
+    <article class="product-item" data-title="Celular Modelo D">
+      <img src="imag/DALL·E 2023-11-07 12.56.03 - A realistic image of a modern smartphone with a sleek design, featuring a large screen with minimal bezels, and a reflective glass back. The phone is .png" alt="Celular Modelo D">
+      <h2>Celular Modelo D</h2>
+      <p>Descrição breve do Celular Modelo D.</p>
+      <span>R$ 2000,00</span>
+      <button onclick="addToCart('Celular Modelo D', 2000)">Comprar</button>
+    </article>
+    <!-- Produto 5 -->
+<article class="product-item" data-title="Celular Modelo E">
+    <img src="imag/5DALL·E 2023-11-07 13.09.38 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, with unique color accents and camera l.png" alt="Celular Modelo E">
+    <h2>Celular Modelo E</h2>
+    <p>Descrição breve do Celular Modelo E.</p>
+    <span>R$ 2200,00</span>
+    <button onclick="addToCart('Celular Modelo E', 2200)">Comprar</button>
+  </article>
+  <!-- Produto 6 -->
+  <article class="product-item" data-title="Celular Modelo F">
+    <img src="imag/6DALL·E 2023-11-07 13.09.37 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, with unique color accents and camera l.png" alt="Celular Modelo F">
+    <h2>Celular Modelo F</h2>
+    <p>Descrição breve do Celular Modelo F.</p>
+    <span>R$ 2400,00</span>
+    <button onclick="addToCart('Celular Modelo F', 2400)">Comprar</button>
+  </article>
+  <!-- Produto 7 -->
+  <article class="product-item" data-title="Celular Modelo G">
+    <img src="imag/7DALL·E 2023-11-07 13.09.35 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, lying on a plain surface with a slight.png" alt="Celular Modelo G">
+    <h2>Celular Modelo G</h2>
+    <p>Descrição breve do Celular Modelo G.</p>
+    <span>R$ 2600,00</span>
+    <button onclick="addToCart('Celular Modelo G', 2600)">Comprar</button>
+  </article>
+  <!-- Produto 8 -->
+  <article class="product-item" data-title="Celular Modelo H">
+    <img src="imag/8DALL·E 2023-11-07 13.09.34 - A realistic image of a modern smartphone with a sleek design, displayed from the front view showing the screen, lying on a plain surface with a slight.png" alt="Celular Modelo H">
+    <h2>Celular Modelo H</h2>
+    <p>Descrição breve do Celular Modelo H.</p>
+    <span>R$ 2800,00</span>
+    <button onclick="addToCart('Celular Modelo H', 2800)">Comprar</button>
+  </article>
+  
+  </section>
+
+  <!-- aqui sera o botão fixo de descarte-->
+
+  <div class="btn-localizador" style="display: block;">
+  <a href="lacalizador.html">
+    <img src="/pngwing.com.png" alt="">
+   <!-- <p>Onde Descartar</p>-->
+  </a>
+</div>
+</main>
+
+<!-- Carrinho de compras -->
+<aside id="shopping-cart">
+  <h2>Seu Carrinho</h2>
+  <ul id="cart-items">
+    <!-- Itens do carrinho serão adicionados aqui -->
+  </ul>
+  <p>Total: <span id="cart-total">R$ 0,00</span></p>
+  <br>
+  <label for="caixaTexto">codigo de desconto:</label>
+  <input type="text" id="caixaTexto" style="margin-bottom: 10px;">
+  
+  <button id="checkout-button">Finalizar Compra</button>
+</aside>
+
+<!-- Opções de pagamento -->
+<div id="payment-options" class="payment-options" style="display: none;">
+    <h2>Escolha o método de pagamento:</h2>
+    <button class="payment-method-button" data-method="Débito">DÉBITO</button>
+    <button class="payment-method-button" data-method="Crédito">CRÉDITO</button>
+    <button class="payment-method-button" data-method="Boleto Bancário">BOLETO</button>
+    <button class="payment-method-button" data-method="Pix">PIX</button>
+    <button id="close-payment-options" class="cancel-button">CANCELAR</button>
+</div>
+
+<!-- Overlay para modais -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Modal de confirmação -->
+<div id="confirmation-modal" class="modal">
+  <div class="modal-content">
+    <p id="confirmation-message">Obrigado por sua compra! Seu pagamento será processado.</p>
+    <button id="back-home">Voltar ao Início</button>
+  </div>
+</div>
+
+<!-- Rodapé do site -->
+<footer>
+  <p>Protótipo de e-commerce criado pelos alunos do Centro Universitário Newton Paiva para apresentação de projeto pela disciplina Usina de Projetos Experimentais - UPx.</p>
+  <p>© 2023 Smart Consumption</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

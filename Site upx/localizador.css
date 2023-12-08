@@ -1,0 +1,186 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+footer {
+    background-color: #001B79;
+    color: #fff;
+    text-align: center;
+    padding: 0.30em 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  
+    
+}
+
+header a {
+  letter-spacing: 0.05em;
+  flex-grow: 1; /* Permite que o título cresça e use o espaço disponível */
+  text-decoration: none;
+}
+header {
+    background-color: #001B79;
+    padding: 1em 2em; /* Ajuste para dar mais espaço horizontal */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alterado para space-between para distribuir os elementos uniformemente */
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #FFFFDD;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-grow: 1; /* Permite que o título cresça e use o espaço disponível */
+  text-align: center; /* Centraliza o texto do título */
+  transition: 0.3s;
+}
+
+header h1::before {
+  content: url("caminho_para_seu_ícone.png");
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header h1:hover {
+  transition: 0.3s;
+  color: #A2C579;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  flex-basis: 30%; /* Define um tamanho base para o container de pesquisa */
+  margin-right: 100px;
+}
+
+.search-container input[type="search"] {
+  width: 100%; /* Faz o input usar todo o espaço disponível */
+  padding: 0.5em 1em;
+  border: 1px solid #abd1c6; /* Adiciona uma borda sutil */
+  border-radius: 20px;
+  margin-right: 1em;
+}
+
+.search-container button {
+  position: absolute; /* Posiciona o botão sobre o input */
+  left: 80%; /* Posiciona à direita do container */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste fino da posição vertical */
+  background-color: #A2C579;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.search-container button:hover {
+    background-color: #D2DE32;
+    color: white;
+}
+
+button {
+    background-color: #A2C579;
+    color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #D2DE32;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  padding: 2em 10%; /* Aumenta o padding horizontal para 10% de cada lado */
+  max-width: 1200px; /* Define uma largura máxima para a grade */
+  margin: auto; /* Centraliza a grade na página */
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Você pode também definir 'align-self: start' para alinhar os itens ao topo */
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+padding: none;
+background-color:white;
+
+}
+
+iframe {
+    display: flex;
+    left: 100;
+}
+
+.texto_explicando{
+    text-align: center;
+        border-right: solid 1px rgb(208, 208, 208);
+        max-width: 30%;
+    padding: 20px;
+}
+
+.texto_explicando ol{
+    text-align: left;
+}
+.texto_explicando ol li{
+    margin-bottom: 20px;
+}
+
+
+.opcoes{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.opcoes select {
+    -webkit-appearance: none;
+    /* Remove estilo padrão do Chrome */
+    -moz-appearance: none;
+    /* Remove estilo padrão do FireFox */
+    appearance: none;
+    /* Remove estilo padrão do FireFox*/
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat rgb(248, 248, 248);
+    /* Imagem de fundo (Seta) */
+    background-position: 218px center;
+    /*Posição da imagem do background*/
+    width: 250px;
+    /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height: 30px;
+    /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border:1px solid black ;
+    text-align: center;
+}
+
+
+
+.formulario_usuario{
+  text-align: center;
+}
