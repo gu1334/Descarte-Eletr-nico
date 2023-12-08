@@ -28,16 +28,15 @@ A finalidade do projeto é permitir que o usuário tenha acesso a uma interface 
  
 
 # JUSTIFICATIVA 
+Tendo como referência estes objetivos o projeto pretende reduzir a produção do E-lixo ou lixo tecnológico, que representam qualquer equipamento eletrônico que não esteja mais em uso. Segundo Ghebreyesus (2021), diretor-geral da OMS (Organização Mundial de Saúde) “Com volumes crescentes de produção e descarte, o mundo enfrenta o que um recente fórum internacional descreveu como um crescente ‘tsunami de lixo eletrônico’, colocando vidas e a saúde em risco, Da mesma forma que o mundo se uniu para proteger os mares e seus ecossistemas da poluição por plásticos e microplásticos, precisamos nos unir para proteger nosso recurso mais valioso - a saúde”. 
 
-         Tendo como referência estes objetivos o projeto pretende reduzir a produção do E-lixo ou lixo tecnológico, que representam qualquer equipamento eletrônico que não esteja mais em uso. Segundo Ghebreyesus (2021), diretor-geral da OMS (Organização Mundial de Saúde) “Com volumes crescentes de produção e descarte, o mundo enfrenta o que um recente fórum internacional descreveu como um crescente ‘tsunami de lixo eletrônico’, colocando vidas e a saúde em risco, Da mesma forma que o mundo se uniu para proteger os mares e seus ecossistemas da poluição por plásticos e microplásticos, precisamos nos unir para proteger nosso recurso mais valioso - a saúde”. 
+ Marques (2023) disse que, muitos dispositivos eletrônicos contêm substâncias tóxicas, como mercúrio, chumbo e cádmio, que podem vazar para o solo e a água se os dispositivos forem descartados inadequadamente em aterros sanitários. Além disso, a produção de eletrônicos requer a extração de recursos naturais, o que contribui para a degradação ambiental. 
 
-       Marques (2023) disse que, muitos dispositivos eletrônicos contêm substâncias tóxicas, como mercúrio, chumbo e cádmio, que podem vazar para o solo e a água se os dispositivos forem descartados inadequadamente em aterros sanitários. Além disso, a produção de eletrônicos requer a extração de recursos naturais, o que contribui para a degradação ambiental. 
-
-        E de acordo com a publicação da Green Eletron com informações da pesquisa Resíduos eletrônicos no Brasil – 2021. O Brasil é o quinto maior gerador desse lixo no mundo. Mesmo assim, muita gente ainda não sabe o que é esse tipo de resíduo e como ele deve ser descartado para evitar danos ao meio ambiente e à saúde humana, AGENCIABRASIL (2021). 
+E de acordo com a publicação da Green Eletron com informações da pesquisa Resíduos eletrônicos no Brasil – 2021. O Brasil é o quinto maior gerador desse lixo no mundo. Mesmo assim, muita gente ainda não sabe o que é esse tipo de resíduo e como ele deve ser descartado para evitar danos ao meio ambiente e à saúde humana, AGENCIABRASIL (2021). 
 
 De acordo com os Objetivos do Desenvolvimento Sustentável (ODS) nosso projeto se enquadra no objetivo 12, que respectivamente, reduzir substancialmente a geração de resíduos por meio da prevenção, redução, reciclagem e reuso. 
 
-   Com o intuito de minimizar esse quadro o projeto tem como diferencial incentivar o descarte e facilitar as informações quanto aos locais adequados que recebem ou coletam esse lixo eletrônico e fazer parcerias com empresas que fazem a reciclagem do produto. 
+Com o intuito de minimizar esse quadro o projeto tem como diferencial incentivar o descarte e facilitar as informações quanto aos locais adequados que recebem ou coletam esse lixo eletrônico e fazer parcerias com empresas que fazem a reciclagem do produto. 
 
  
 
@@ -48,24 +47,24 @@ De acordo com os Objetivos do Desenvolvimento Sustentável (ODS) nosso projeto s
 
 # MÉTODOS 
 
-          O projeto consiste na representação de como será a utilização de um API dentro de um site para realização de busca de locais onde descartar de maneira adequada o lixo eletrônico do usuário.    
+O projeto consiste na representação de como será a utilização de um API dentro de um site para realização de busca de locais onde descartar de maneira adequada o lixo eletrônico do usuário.    
 
 Para desenvolver o API com as funcionalidades desejadas, foram realizadas pesquisas e optou se pelas linguagens de programação Javascript e Node.js, pois a linguagem Javascript permite que vários efeitos sejam inseridos no API tornando o mais dinâmico e possibilita a execução de instruções como resposta às ações dos usuários.  
-	As dimensões do API que ficaram visíveis em tela serão: 4cm de altura x 6 de largura. O modelo virtual foi escolhido pensando na facilidade que a tecnologia possui para fornecer informações e conectar pessoas independentemente de onde estejam, acredita-se que um modelo virtual venha a alcançar um maior número de usuários. Sendo assim, não possui princípios físicos para serem listados. 
+As dimensões do API que ficaram visíveis em tela serão: 4cm de altura x 6 de largura. O modelo virtual foi escolhido pensando na facilidade que a tecnologia possui para fornecer informações e conectar pessoas independentemente de onde estejam, acredita-se que um modelo virtual venha a alcançar um maior número de usuários. Sendo assim, não possui princípios físicos para serem listados. 
 
-          Visando incentivar o uso do Smart Consumption por um maior número de pessoas, foi decidido que o API seria totalmente gratuito. Assim, espera-se que a falta de custos seja um estímulo para que mais indivíduos utilizem a plataforma. 
+Visando incentivar o uso do Smart Consumption por um maior número de pessoas, foi decidido que o API seria totalmente gratuito. Assim, espera-se que a falta de custos seja um estímulo para que mais indivíduos utilizem a plataforma. 
 
-          Com a ideia do projeto bem definida e as formas de desenvolvimento selecionadas, foi elaborado o documento de UPX 2, contendo o objetivo, a proposta, o propósito e a justificativa para a resolução do problema do descarte irregular de lixo eletrônico. 
+Com a ideia do projeto bem definida e as formas de desenvolvimento selecionadas, foi elaborado o documento de UPX 2, contendo o objetivo, a proposta, o propósito e a justificativa para a resolução do problema do descarte irregular de lixo eletrônico. 
 
   
 
-           A interface de programação de aplicação (API) será implementada no âmbito de um website, para o qual será criado um formato visual simples utilizando HTML, com o intuito de representar a forma como os dados da API serão consumidos e exibidos. A criação de uma API não é um processo simples, sendo que demanda considerável esforço e recursos financeiros. Ao contrário de um software sem uma API, a implementação de um sistema com API requer uma maior dedicação de trabalho.  
+A interface de programação de aplicação (API) será implementada no âmbito de um website, para o qual será criado um formato visual simples utilizando HTML, com o intuito de representar a forma como os dados da API serão consumidos e exibidos. A criação de uma API não é um processo simples, sendo que demanda considerável esforço e recursos financeiros. Ao contrário de um software sem uma API, a implementação de um sistema com API requer uma maior dedicação de trabalho.  
 
 No entanto, ao disponibilizarmos uma API, tem se a possibilidade de criar sistemas mais avançados e diminuir sua complexidade, de forma a facilitar sua compreensão. 
 
   
 
-          A criação da API foi dividida em um passo a passo de acordo com as seguintes etapas: 
+ A criação da API foi dividida em um passo a passo de acordo com as seguintes etapas: 
 
 No primeiro passo, o Node.js foi instalado na máquina para possibilitar o desenvolvimento e a validação da API. No segundo passo, o IDE (Ambiente de desenvolvimento integrado) foi configurado para iniciar o projeto. No terceiro passo, foi feita a estruturação do projeto, com a criação de uma organização de pasta e arquivos. O quarto passo consistiu na criação do arquivo ‘server’, que será utilizado como arquivo de inicialização do projeto. Para organizar o código e dividir de acordo com o padrão MVC (Model-View-Controller), no quinto passo foi criado um Controller, que contém as principais ações da API. No sexto passo, foram criadas as rotas, que permitem que as requisições sejam direcionadas corretamente e que o funcionamento da API possa ser verificado. No sétimo passo, foram realizadas as configurações da base de dados. Para facilitar o desenvolvimento e evitar a necessidade de reiniciar o servidor a cada alteração, foi utilizado o node Mon no oitavo passo. No nono passo, o projeto Node será iniciado.  
 
@@ -79,11 +78,9 @@ Os metodologia para o desenvolvimento do protótipo pode ser observada no fluxog
 
 IMAGEM 1 – FLUXOGRAMA DO TRABALHO 
 
+
+![..](fluxograma.jpg)
  
-
-  
-
-  
 
 FONTE: Autoria própria 
 
@@ -97,7 +94,7 @@ https://imasters.com.br/front-end/criando-uma-api-node-em-10-passos-com-express-
 
  
 
-6 RESULTADOS 
+# RESULTADOS 
 
 Esta fase do projeto marca a entrega do produto final, o “API-Smart Consumption”. O projeto apresenta características como a integração com um site de compras de eletrônicos, orientação sobre o descarte de e-lixos, a emissão de cashback na confirmação de entrega do aparelho ao local de descarte incentivando um descarte adequado, e a oferta gratuita do serviço, visando estimular seu uso por um maior número de pessoas. O site, a API e a integração entre eles foram desenvolvidos utilizando HTML, CSS e JavaScript, por meio do Visual Studio Code (VSCode). 
 
