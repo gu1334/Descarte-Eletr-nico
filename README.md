@@ -120,13 +120,19 @@ Segunda tela: É a primeira parte do API, onde o usuário pode conhecer a propos
 
 IMAGEM 2 – PÁGINA INICIAL DO API. 
 
+![..](site2.jpg)
+
 Interface gráfica do usuário, Aplicativo
 
 Descrição gerada automaticamente 
 
 FONTE: Autoria própria. 
 
+
+
 IMAGEM 3 – CONTINUAÇÃO DO API. 
+
+![..](site3.jpg)
 
 Uma imagem contendo Site
 
