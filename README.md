@@ -106,6 +106,8 @@ Tela inicial: Página modelo de e-commerce, onde o usuário pode navegar pelos p
 
 IMAGEM 1: PÁGINA INICIAL DO E-COMMERCE. 
 
+![..](site1.jpg)
+
 Interface gráfica do usuário
 
 Descrição gerada automaticamente 
