@@ -194,9 +194,6 @@ MARQUES, Marina. Entenda os impactos do descarte de lixo eletrônico. [S. l.], 1
 Agência Brasil. Disponível em: https://agenciabrasil.ebc.com.br/. Acesso em: 27 set. 2023.Agência Brasil. Disponível em: https://agenciabrasil.ebc.com.br/. Acesso em: 27 set. 2023. 
 
 ##
-sites de referencia:
-
-##
 ## Trabalho feito por:
 Ana Clara Nogueira de Souza 
 
